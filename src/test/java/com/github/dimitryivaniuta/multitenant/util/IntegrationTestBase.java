@@ -45,8 +45,8 @@ public abstract class IntegrationTestBase {
     registry.add("app.security.jwt.issuer", () -> "https://auth.local");
     registry.add("app.security.jwt.audience", () -> "api");
     registry.add("app.security.jwt.jwks.keys[0].kid", () -> "k1");
-    registry.add("app.security.jwt.jwks.keys[0].publicKeyLocation", () -> "classpath:keys/jwks-k1-public.pem");
+    registry.add("app.security.jwt.jwks.keys[0].publicKeyLocation", () -> "classpath:keys/jwks-k1-public.pem.example.example");
     registry.add("app.security.jwt.jwks.keys[1].kid", () -> "k2");
-    registry.add("app.security.jwt.jwks.keys[1].publicKeyLocation", () -> "classpath:keys/jwks-k2-public.pem");
+    registry.add("app.security.jwt.jwks.keys[1].publicKeyLocation", () -> "classpath:keys/jwks-k2-public.pem.example.example");
       }
 }
